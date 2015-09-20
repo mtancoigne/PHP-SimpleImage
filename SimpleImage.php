@@ -313,7 +313,7 @@ class SimpleImage {
 			// In this case, the watermark is on a color band above or under the pic.
 			//case 'extend':
 				//break;
-		}
+		//}
 
 		$this->log("Image watermarked with file $source");
 	}
