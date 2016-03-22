@@ -371,6 +371,32 @@ class SimpleImage {
 		}
 	}
 
+	/**
+	 * Rotates an image
+	 *
+	 * @param integer $angle Desired angle to rotate (clockwise)
+	 */
+    function rotate($angle = 90) {
+		$this->image = imagerotate($this->image, $angle, 0);
+    }
+
+
+	/**
+	 * Rotates an image horizontally or vertically
+	 *
+	 * @param string $direction 'x' for horizontal (default), 'y' for vertical
+	 */
+    function rotateTo($direction = 'x') {
+		if ($direction == "x") {
+			if ($this->getHeight() > $this->getWidth()) {
+				$this->rotate(90);
+			}
+		} else if ($direction == "y") {
+			if ($this->getWidth() > $this->getHeight()) {
+				$this->rotate(90);
+			}
+		}
+    }
 }
 
 ?>
