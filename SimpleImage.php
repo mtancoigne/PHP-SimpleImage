@@ -79,7 +79,7 @@ class SimpleImage {
 	 *
 	 * @return boolean True in case of success, false on failure.
 	 */
-	function save($filename, $original = false, $image_type = null, $compression = 75, $permissions = null) {
+	function save($filename, $original = false, $image_type = null, $compression = 100, $permissions = null) {
 		// Selecting image
 		$image = ($original === true) ? $this->image : $this->currentImage;
 		if ($image_type == null) {
