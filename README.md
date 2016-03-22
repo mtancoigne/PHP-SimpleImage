@@ -227,3 +227,25 @@ function resizeSmallestTo($size) {}
  */
 function resizeBiggestTo($size) {}
 ```
+
+### rotate
+
+```PHP
+/**
+ * Rotates an image
+ *
+ * @param integer $angle Desired angle to rotate (clockwise)
+ */
+function rotate($angle = 90) {}
+```
+
+### rotateTo
+
+```PHP
+/**
+ * Rotates an image horizontally or vertically
+ *
+ * @param string $direction 'x' for horizontal (default), 'y' for vertical
+ */
+ function rotateTo($direction = 'x') {}
+```
